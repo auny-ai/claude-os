@@ -6,11 +6,12 @@
 ## What This Is
 
 Most people store notes in Obsidian.
-This is not a notes system.
+This is not just a note-taking app. 
+It's a whole system you should utilize as your second brain.
 
-This is a cognitive operating system —
-a structured vault that connects to Claude via MCP
-and becomes the memory layer for every AI tool in the stack.
+Use Obsidian as a cognitive operating system; 
+a structured vault that connects to Claude via MCP 
+and becomes the memory layer for every AI tool in your stack.
 
 Every session starts by reading it.
 Every output is shaped by what's in it.
@@ -21,11 +22,12 @@ Nothing gets re-explained between sessions.
 ## The Core Concept
 
 Claude has no memory between sessions by default.
-Projects help. Custom instructions help.
+- Projects help. 
+- Custom instructions help.
 But neither gives Claude the full picture of who you are,
 how you work, what you've built, and what matters.
 
-The vault does.
+Your vault does.
 
 When Claude reads the vault before a session,
 it knows:
@@ -105,8 +107,6 @@ Music task → read music files only
 Business task → read consulting files only
 Identity work → read psychosis files only
 ```
-Full routing table: see
-`session-protocol/02_domain_routing_table.md`
 
 ---
 
@@ -144,12 +144,10 @@ vault files mid-session without any copy-paste.
 - List folder contents to orient before reading
 
 **What this means in practice:**
-Claude opens a content session →
-reads the content manual automatically →
-pulls Typefully analytics via MCP →
-runs research →
-writes posts →
-logs anything new back to the vault
+```
+Claude opens a content session → reads the content manual automatically → pulls Typefully analytics via MCP
+→ runs research → writes posts → logs anything new back to the vault
+```
 
 Zero manual context loading.
 Zero re-explaining between sessions.
@@ -192,15 +190,26 @@ Full setup guide: `vault-architecture/02_mcp_connection_guide.md`
 
 ### Step 5 — Write a Session Protocol
 Tell Claude explicitly what to read before every session.
-Even a basic version works:
+Throw it in your project instructions. 
+Even a basic version works. Here's an example of mine:
 ```
-At the start of every session, read:
+You are Claude, chief of staff and Black Widow 🕷️ to Auny (@AunySillyMe).
 
-_index.md
-The relevant protocol file for this domain
-Any active task files
+This project is for building, documenting, and monetizing AI workflows and agent systems. Every workflow we build is simultaneously a tool, a content piece, and a product.
 
-Do not begin work until these are read.
+VAULT FIRST: At the start of every session, access the Obsidian vault and read:
+1. _index.md (master map)
+2. 📐 Claude Protocols/01_session_start_protocol.md
+3. 🤖 AI Workflows/00_workflow_system.md
+4. 🤖 AI Workflows/01_ai_stack_inventory.md
+
+When Auny drops a trending agent post from X: run the full teardown framework from 📐 Claude Protocols/05_workflow_build_protocol.md and log it in 🤖 AI Workflows/02_trending_agents_log.md.
+
+Always check 🤖 AI Workflows/03_monetization_tracker.md for revenue angles.
+
+Auny's AI stack includes: Claude, Claude Cowork, ChatGPT, Gemini + Google Pro, Grok + Grok Imagine, Suno, Soundboost AI, Linear AI, Obsidian, Typefully, Beehiiv, Canva.
+
+Build balanced: speed + depth + visibility. Every workflow is content before it's a product.
 ```
 ### Step 6 — Use It. Update It.
 The vault is only valuable if it reflects current reality.
@@ -222,24 +231,24 @@ You never have to manually maintain it.
 - Not a journaling app
 - Not a second brain for personal knowledge management
 
-It is infrastructure.
-The same way a database serves an application,
-the vault serves the AI stack.
+It is infrastructure. 
+The same way a database serves an application, the vault serves your AI stack. 
+Any LLM you choose to use can read your vault and gather context on you right away. 
+So you never lose your data, never have to feel like 'oh but GPT knows so much about me, 
+i would have to start from scratch'  when a new, more powerful and capable model comes out!
 
-Every tool reads from it.
-Every session updates it.
-The system gets smarter over time automatically.
+Your system gets smarter over time automatically.
 
 ---
 
 ## The Result
 
-A one-person AI stack with a shared memory layer.
-No tool starts from zero.
-No context gets lost between sessions.
-The system compounds — every session builds on the last.
+Now I run a one-person AI stack with a shared memory layer. 
+No tool starts from zero. No context gets lost between sessions.
+The system compounds - every session builds on the last - across all LLMs and AI tools.
 
 ---
 
 *Part of [claude-os](https://github.com/auny-ai/claude-os) —
-a multi-AI operating system built in public.*
+a multi-AI operating system being built in public.
+Learning as I go. Sharing it all for you*

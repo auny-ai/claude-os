@@ -28,7 +28,7 @@ without switching apps, without copying anything.
 
 **What this looks like in a content session:**
 ```
-"Write me 5 posts on AI agents"
+"Suggest me 5 posts on AI agents"
 → Claude reads your content pillars from the vault
 → Claude calls Grok's x_search for what's trending
 on X about AI agents right now
@@ -36,7 +36,7 @@ on X about AI agents right now
 timed to live conversation
 ```
 That combination — vault context + live X data + 
-your voice — is not possible any other way.
+your voice — is what takes your automation to the next level.
 
 ---
 
@@ -51,35 +51,39 @@ your voice — is not possible any other way.
 ## Step 1 — Get Your xAI API Key
 
 The Grok MCP requires an xAI API key.
-This is separate from your Grok subscription on X.
 
-**The good news: free credits are generous.**
+**The good news: **xAPI free credits are super generous.**
 
-xAI gives every developer up to $175/month free:
-- $25 free on signup
-- $150/month extra if you enable data sharing
-  in your console settings
 
-For a few X searches per content session,
-the free credits cover months of usage.
+And if anything, even $5 will last you a very long time!
 
-**To get access:**
-1. Go to **console.x.ai**
-2. Sign up or log in
-   (you may already have an account if you use Grok on X)
-3. Go to **API Keys** → create a new key
-4. Go to **Settings** → **Data Sharing** → enable it
-   to unlock the $150/month free credits
-5. Copy your API key — you'll need it in Step 3
+**The setup:**
+
+## 1. Get your xAI API key
+
+To get access:
+• Go to console.x.ai
+• Sign up / log in
+• Go to API Keys → create a key
 
 ---
 
-## Step 2 — Create The Install Script
+## 2. Tell Claude: 
 
-Open a text editor (TextEdit on Mac, Notepad on Windows).
-Create a new file and paste this:
+```
+"write me a bash install script to connect the Grok MCP server to Claude Desktop using my xAI API key and give me step by step instructions on how to set it up"
+```
 
-```bash
+It'll write the whole script for you
+
+And tell you how to run it on your terminal
+
+---
+
+Or if you just wanna copy-paste; use this:
+
+```
+bash
 #!/bin/bash
 set -e
 
@@ -165,15 +169,13 @@ it never touches a file or a chat.
 
 ## Step 4 — Restart Claude Desktop
 
-**Cmd+Q** to fully quit Claude Desktop.
-Not just close the window — fully quit.
+Fully quit Claude Desktop.
 
-Reopen Claude Desktop.
+Reopen Claude.
 
 Go to **Settings** → **Developer** →
 you should see `grok` in your MCP servers list
-alongside any other servers you have running
-(like `auny-vault` if you have Obsidian connected).
+alongside any other servers you have running.
 
 ---
 
@@ -197,33 +199,33 @@ Connection confirmed. Now tell Claude when and how to use it.
 
 Add this to your Claude Project instructions:
 ```
+Example
+-------
+
 RESEARCH PROTOCOL:
-When running content research, use Grok MCP x_search
+When running research, use Grok MCP x_search
 for live X trend data — not general web search.
 Search within my content pillars only:
 
 AI workflows and tools
 Creator systems and monetization
 Music and independent artist content
-Personal brand and identity
 
 A topic trending on X doesn't automatically mean
-it's relevant. Cross-reference against my content
-pillars before including in content direction.
+it's relevant. Cross-reference against 'xyz' before including in results.
 State what you searched and what you found
 before writing anything.
 ```
-**The pillar filter is critical.**
+**The search filter is critical.**
 Without it, Claude will surface whatever is trending —
-not what's relevant to your specific content strategy.
-Trending and relevant are not the same thing.
+not what's relevant to your specific needs.
 
 ---
 
 ## What The Automated Session Looks Like
 
 With Grok MCP connected and the protocol in place,
-a content session runs like this automatically:
+one of my content session runs like this automatically:
 ```
 1. Pull published posts (last 30)       ← Typefully MCP
 2. Pull scheduled queue                 ← Typefully MCP
@@ -237,9 +239,17 @@ a content session runs like this automatically:
 10. Write
 ```
 Steps 1-4 happen automatically via MCP
-before a single post gets written.
+before Claude starts drafting posts.
 No prompting required.
 Built into the session protocol.
+
+---
+
+Read more about my protocols and workflows on my repo here: 
+[auny-ai claudeOS](https://github.com/auny-ai/claude-os)
+
+Check out how to build a full vault structure:
+[vault architecture](https://github.com/auny-ai/claude-os/tree/main/vault-architecture)
 
 ---
 

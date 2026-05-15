@@ -1,3 +1,18 @@
+---
+title: Visual Guide - Quick Start Screenshots
+description: Visual walkthrough of the claude-os system with diagrams showing the session protocol flow, vault architecture, and multi-AI orchestration in action.
+category: guide
+status: active
+difficulty: beginner
+reading_time: 10 minutes
+visual_guide: true
+tags:
+  - getting-started
+  - visual
+  - architecture
+  - diagrams
+---
+
 # Quick Start: Screenshots & Visual Guide
 
 *Visual walkthrough of the claude-os system. Click images to see full size.*
@@ -12,22 +27,22 @@ The core routing system that powers every Claude session:
 ┌─────────────────────────────────────────────────────────────┐
 │                    EVERY SESSION STARTS HERE                │
 └─────────────────────────────────────────────────────────────┘
-                              ↓
-                    1. IDENTIFY (what domain?)
-                              ↓
-                    2. READ (load relevant files)
-                              ↓
-                    3. CHECK (pull task status)
-                              ↓
-                    4. WORK (execute with context)
-                              ↓
-                    5. UPDATE (mark completed tasks)
-                              ↓
-                    6. SAVE (write changes to vault)
-                              ↓
-         ┌─────────────────────────────────────────┐
-         │   Next session loads with this context  │
-         └─────────────────────────────────────────┘
+                               ↓
+                     1. IDENTIFY (what domain?)
+                               ↓
+                     2. READ (load relevant files)
+                               ↓
+                     3. CHECK (pull task status)
+                               ↓
+                     4. WORK (execute with context)
+                               ↓
+                     5. UPDATE (mark completed tasks)
+                               ↓
+                     6. SAVE (write changes to vault)
+                               ↓
+          ┌─────────────────────────────────────────┐
+          │   Next session loads with this context  │
+          └─────────────────────────────────────────┘
 ```
 
 **Key insight:** Nothing is forgotten. Every session builds on the last one.
@@ -70,21 +85,21 @@ OBSIDIAN VAULT (Single Source of Truth)
 ## 3. Multi-AI Stack: Tool-to-Task Mapping
 
 ```
-                     🎯 YOUR TASK
-                          ↓
-        ┌─────────────────┼─────────────────┐
-        ↓                 ↓                 ↓
-   Write & Reason    Deep Research    Real-time Data
-        ↓                 ↓                 ↓
-     CLAUDE            GEMINI             GROK
-   • Vault reading    • Trend analysis   • X/Twitter
-   • Strategy         • Long context     • Real-time art
-   • Execution        • Fact-checking    • Character work
-        ↓                 ↓                 ↓
-   ┌─────────────────────────────────────────┐
-   │   Secondary opinion? Alternative angle? │
-   │         → ChatGPT (when needed)         │
-   └─────────────────────────────────────────┘
+                      🎯 YOUR TASK
+                           ↓
+         ┌─────────────────┼─────────────────┐
+         ↓                 ↓                 ↓
+    Write & Reason    Deep Research    Real-time Data
+         ↓                 ↓                 ↓
+      CLAUDE            GEMINI             GROK
+    • Vault reading    • Trend analysis   • X/Twitter
+    • Strategy         • Long context     • Real-time art
+    • Execution        • Fact-checking    • Character work
+         ↓                 ↓                 ↓
+    ┌─────────────────────────────────────────┐
+    │   Secondary opinion? Alternative angle? │
+    │         → ChatGPT (when needed)         │
+    └─────────────────────────────────────────┘
 ```
 
 **Result:** No tool is overburdened. Every tool does what it's best at.
@@ -204,16 +219,16 @@ YOU: "I need a full release package: song, video, post, newsletter."
   Demo    Angles    Art         Script
     ↓         ↓         ↓          ↓
   └────┬─────┴─────┬──────────┐
-       ↓           ↓          ↓
-    SOUNDBOOST   TYPEFULLY  CAPCUT
-    (Master)     (Schedule) (Edit)
-       ↓           ↓          ↓
-    Master     Queued      Video
-    File       Posts       Package
-       ↓           ↓          ↓
-    DISTROKID  [Publishing]  [Publishing]
-       ↓
-    Across Spotify, Apple, YouTube, etc.
+     ↓           ↓          ↓
+  SOUNDBOOST   TYPEFULLY  CAPCUT
+  (Master)     (Schedule) (Edit)
+     ↓           ↓          ↓
+  Master     Queued      Video
+  File       Posts       Package
+     ↓           ↓          ↓
+  DISTROKID  [Publishing]  [Publishing]
+     ↓
+  Across Spotify, Apple, YouTube, etc.
 
 RESULT: Full release pipeline in 1 session. Coordinated. Documented.
 ```

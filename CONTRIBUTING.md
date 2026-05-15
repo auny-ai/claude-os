@@ -1,3 +1,16 @@
+---
+title: Contributing to claude-os
+description: Guidelines for contributing workflows, documentation, personas, and integrations to the claude-os project. Community-driven development built in public.
+category: governance
+status: active
+tags:
+  - contribution
+  - community
+  - guidelines
+  - workflows
+  - documentation
+---
+
 # Contributing to claude-os 🕷️
 
 Thank you for your interest in contributing to claude-os! This project is built in public, and we're excited to have community contributions that improve the framework for everyone.

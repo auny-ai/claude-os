@@ -1,0 +1,292 @@
+---
+name: claude-os
+owner: auny-ai
+description: A multi-AI operating system. Session protocols, vault architecture, and workflow frameworks built in public.
+repository_url: https://github.com/auny-ai/claude-os
+created_at: 2026-05-06
+updated_at: 2026-05-15
+version: 1.0.0
+status: active
+visibility: public
+homepage: https://x.com/AunySillyMe
+
+# Documentation Structure
+documentation:
+  root_guides:
+    - README.md
+    - START-HERE.md
+    - VISUAL-GUIDE.md
+    - CONTRIBUTING.md
+  
+  sections:
+    session_protocol:
+      path: session-protocol/
+      description: Routing system that loads domain-specific context before every session
+      files:
+        - 01_session_start_protocol.md
+        - 02_domain_routing_table.md
+        - 03_universal_rules.md
+    
+    vault_architecture:
+      path: vault-architecture/
+      description: Obsidian vault connected to Claude via MCP as single source of truth
+      files:
+        - 01_obsidian_structure.md
+        - 02_mcp_connection_guide.md
+        - 03_vault_as_brain.md
+    
+    multi_ai_stack:
+      path: multi-ai-stack/
+      description: Tool orchestration with defined roles for each AI platform
+      files:
+        - 01_stack_overview.md
+        - 02_tool_to_task_mapping.md
+    
+    templates:
+      path: templates/
+      description: Vault skeleton and workflow templates ready to use
+      subdirs:
+        - vault-skeleton/
+        - persona-examples/
+        - workflow-templates/
+    
+    integrations:
+      path: integrations/
+      description: MCP setup guides and tool integration documentation
+      files:
+        - 01_grok-mcp-setup.md
+        - 02_linear-mcp-setup.md
+        - 03_remotion-mcp-setup.md
+
+# AI Tools Registry
+ai_tools:
+  intelligence_layer:
+    - name: Claude
+      role: Chief of staff — reasoning, writing, strategy, vault management
+      url: https://claude.ai
+      mcp_capable: true
+    
+    - name: Claude Cowork
+      role: Autonomous desktop agent — admin, form filling, web extraction
+      mcp_capable: true
+    
+    - name: Claude Code
+      role: Website and software builds
+      projects:
+        - aunysillyme.com
+        - auny.media/links
+    
+    - name: Claude Design
+      role: Digital products, PDFs, brand kits, formatted assets
+    
+    - name: ChatGPT
+      role: Second-opinion, alternative angle generation
+      url: https://chatgpt.com
+    
+    - name: Gemini
+      role: Deep research, trend analysis, large-context analysis
+      url: https://gemini.google.com
+    
+    - name: Grok
+      role: Real-time X data, social context, character art
+      url: https://grok.com
+  
+  content_tools:
+    - name: Typefully
+      role: Scheduling and analytics across X, LinkedIn, Threads, Bluesky
+      mcp_capable: true
+    
+    - name: Beehiiv
+      role: Newsletter platform — Explained Without Fluff
+      url: https://beehiiv.com
+      mcp_capable: true
+    
+    - name: Obsidian
+      role: Vault — source of truth for every tool in the system
+      mcp_capable: true
+      critical: true
+    
+    - name: Linear
+      role: Project and workflow tracking
+      url: https://linear.app
+      mcp_capable: true
+    
+    - name: NotebookLM
+      role: Newsletter → Cinematic Video Overviews
+      url: https://notebooklm.google.com
+    
+    - name: CapCut
+      role: Video production and editing
+    
+    - name: Canva
+      role: Quick social graphics
+      mcp_capable: true
+  
+  music_tools:
+    - name: Suno
+      role: AI music generation and production prototyping
+      url: https://suno.com
+    
+    - name: Soundboost AI
+      role: Audio mastering for distribution
+    
+    - name: DistroKid
+      role: Distribution across all streaming platforms + revenue collection
+      url: https://distrokid.com
+    
+    - name: ASCAP
+      role: Performing rights registration + performance royalty collection
+      url: https://ascap.com
+  
+  art_animation_tools:
+    - name: Grok Imagine
+      role: Dark cinematic character art, consistent visual identity
+    
+    - name: GPT Image 2.0
+      role: Complex scene compositions, thumbnails with text overlay
+    
+    - name: Three.js MCP
+      role: 3D scene generation, interactive animations, visual content
+      mcp_capable: true
+  
+  distribution_monetization:
+    - name: Buy Me a Coffee
+      role: Digital product delivery and one-time purchases
+      url: https://buymeacoffee.com
+    
+    - name: X Ads
+      role: Paid discovery — amplifying content that's already working
+    
+    - name: Calendly
+      role: Client booking for consulting and strategy calls
+      mcp_capable: true
+
+# MCPs (Model Context Protocol)
+mcps:
+  - name: Obsidian
+    capability: Claude reads the vault before every session
+    setup: vault-architecture/02_mcp_connection_guide.md
+    status: active
+    critical: true
+  
+  - name: Linear
+    capability: Pull tasks, update status, create issues mid-session
+    setup: integrations/02_linear-mcp-setup.md
+    status: active
+  
+  - name: Typefully
+    capability: Pull analytics, read queue, schedule posts
+    status: active
+  
+  - name: Beehiiv
+    capability: Read newsletter drafts and performance data
+    status: active
+  
+  - name: Google Drive
+    capability: Access documents, novel drafts, research files
+    status: active
+  
+  - name: Gmail
+    capability: Read and draft communications
+    status: active
+  
+  - name: Google Calendar
+    capability: Scheduling and time context
+    status: active
+  
+  - name: Canva
+    capability: Design asset management
+    status: active
+  
+  - name: Calendly
+    capability: Client booking
+    status: active
+  
+  - name: Three.js
+    capability: 3D and animation generation in-session
+    status: active
+  
+  - name: Grok
+    capability: Real-time X post search and character art
+    setup: integrations/01_grok-mcp-setup.md
+    status: active
+
+# Real Outputs & Verified Results
+real_outputs:
+  - workflow: 150-song music catalog registered on ASCAP
+    tools:
+      - Claude Cowork
+      - Obsidian vault
+    result: Full catalog, one session, autonomous
+    date: "2026-Q1"
+  
+  - workflow: Website built from scratch
+    tools:
+      - Claude Code
+    result: aunysillyme.com — direction → build → ship
+    date: "2026-Q1"
+  
+  - workflow: E-guide to viral post
+    tools:
+      - Claude Design
+    result: "116,827 impressions, 93 saves"
+    date: "2026-Q1"
+  
+  - workflow: Full music release pipeline
+    tools:
+      - Suno
+      - Soundboost AI
+      - DistroKid
+    result: End-to-end, documented
+    date: "2026-Q2"
+  
+  - workflow: Newsletter to video content
+    tools:
+      - NotebookLM
+      - Beehiiv
+    result: 3 cinematic video overviews produced
+    date: "2026-Q2"
+
+# Contribution Guidelines
+contributions:
+  accepted_types:
+    - verified_workflows
+    - documentation_improvements
+    - persona_templates
+    - mcp_integrations
+    - bug_reports
+  
+  criteria:
+    - reproducible
+    - practical
+    - documented
+    - honest
+  
+  recognition:
+    - Community Workflows section in README
+    - Contributor name in workflow files
+    - CONTRIBUTORS.md file (coming soon)
+
+# Repository Topics
+topics:
+  - ai-automation
+  - ai-orchestration
+  - built-in-public
+  - claude-ai
+  - knowledge-management
+  - mcp
+  - multi-ai
+  - obsidian-vault
+  - productivity
+  - workflow-automation
+
+# Social Links
+social:
+  twitter: https://x.com/AunySillyMe
+  newsletter: https://explained-without-fluff.beehiiv.com
+  website: https://aunysillyme.com
+
+# License
+license:
+  type: Other
+  url: https://github.com/auny-ai/claude-os/blob/main/LICENSE

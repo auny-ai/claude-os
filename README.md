@@ -1,3 +1,22 @@
+---
+title: claude-os — A Multi-AI Operating System
+description: A documented, production-tested framework for running Claude and coordinated AI tools as an actual operating system with session protocols, vault architecture, and workflow frameworks.
+category: core
+status: active
+created: 2026-05-06
+updated: 2026-05-15
+author: AunySillyMe
+tags:
+  - ai-orchestration
+  - multi-ai
+  - claude-ai
+  - workflow-automation
+  - mcp
+  - obsidian-vault
+  - knowledge-management
+contributors: []
+---
+
 # claude-os 🕷️
 ### A multi-AI operating system. Not a prompt. Not a file. A system.
 

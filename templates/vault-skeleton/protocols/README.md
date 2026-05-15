@@ -1,3 +1,16 @@
+---
+title: Protocols — Session Management & Routing
+description: Every protocol Claude uses to work inside the vault. Session start protocols, routing rules, and domain-specific workflows.
+category: framework
+status: active
+section: templates
+tags:
+  - protocols
+  - session-management
+  - routing
+  - workflows
+---
+
 # 📐 Protocols
 
 *Every protocol Claude uses to work inside this vault. Every session loads one or more of these.*

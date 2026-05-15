@@ -1,3 +1,16 @@
+---
+title: Start Here
+description: Quick navigation guide for new users to the claude-os repository. Choose your path based on time available and depth needed.
+category: guide
+status: active
+difficulty: beginner
+reading_time: 5-15 minutes
+tags:
+  - getting-started
+  - navigation
+  - documentation
+---
+
 # Start Here 🕷️
 ### New to this repo? Read these files in this order.
 

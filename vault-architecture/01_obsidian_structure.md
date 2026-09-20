@@ -71,7 +71,7 @@ Vault/
 ├── 📬 Newsletter (EWF)/             ← Explained Without Fluff
 ├── 📲 Social Media Playbook/        ← platform strategies
 ├── 📖 X Growth Playbook/            ← X-specific growth system
-├── 🧠 Identity/ ← voice, values, how you think
+├── 🧠 Identity/                     ← voice, values, how you think
 ├── 🐙 Git Repo/                     ← GitHub build log
 └── 📝 Tasks/                        ← active task tracking
 ```

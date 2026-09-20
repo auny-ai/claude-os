@@ -1,3 +1,16 @@
+---
+title: Session Start Protocol
+description: Defines the three-mode session-start system (lightweight, standard, deep) and the domain-specific reading lists Claude loads at the start of a session, so context loads automatically instead of being re-explained every chat.
+category: protocol
+status: active
+tags:
+  - session-management
+  - routing
+  - protocols
+  - claude
+  - context-loading
+---
+
 # Session Start Protocol
 ### How to give Claude full context before every session — automatically
 

@@ -1,3 +1,16 @@
+---
+title: MCP Connection Guide
+description: Step-by-step guide to installing the Obsidian Local REST API plugin, connecting Obsidian to Claude over MCP, testing the connection, building a starter vault structure, and troubleshooting common connection issues.
+category: integration
+status: active
+tags:
+  - mcp
+  - obsidian-vault
+  - integration-guide
+  - vault-structure
+  - troubleshooting
+---
+
 # MCP Connection Guide
 ### How to connect Obsidian to Claude and make your vault the memory layer for every session
 

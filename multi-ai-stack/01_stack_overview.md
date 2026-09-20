@@ -1,3 +1,16 @@
+---
+title: Multi-AI Stack Overview
+description: Maps each AI tool in the auny-ai stack to a single role (chief of staff, research, second opinion, visual production, music, content operations, build, system, distribution) and shows how the tools hand off to each other across four end-to-end workflows.
+category: architecture
+status: active
+tags:
+  - multi-ai
+  - ai-orchestration
+  - claude
+  - mcp
+  - workflow-automation
+---
+
 # Multi-AI Stack Overview
 ### Why one tool isn't enough — and how to run many as one system
 

@@ -1,3 +1,16 @@
+---
+title: CLAUDE.md Template
+description: Fill-in-the-blank CLAUDE.md skeleton (what this is, tools available, behavior rules, read-before-every-session list, routing, hard don'ts) for scaffolding a new project's root context file.
+category: template
+status: active
+tags:
+  - template
+  - claude-md
+  - scaffolding
+  - routing
+  - behavior-rules
+---
+
 # [Project Name]
 
 ## What This Is

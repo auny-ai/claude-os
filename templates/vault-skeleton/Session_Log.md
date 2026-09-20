@@ -1,3 +1,15 @@
+---
+title: Session Log Template
+description: Fill-in-the-blank running log template for recording vault changes across chats (date, what changed, why). It is the FIRST file Claude reads each session, before HQ.md, so it knows what other chats changed.
+category: template
+status: active
+tags:
+  - template
+  - session-log
+  - vault-structure
+  - context
+---
+
 # Session Log
 
 *Running log of vault changes across all chats. Every session that creates, edits, or deletes vault files appends an entry here. Every new session starts by reading this file.*

@@ -1,3 +1,15 @@
+---
+title: Vault HQ Template
+description: Fill-in-the-blank vault map template listing protocols, workflows, domains, the session log, and tool inventory, meant to sit at the vault root. Claude reads it second each session, after Session_Log.md, as the table of contents for everything else.
+category: template
+status: active
+tags:
+  - template
+  - vault-structure
+  - navigation
+  - obsidian
+---
+
 # Vault HQ
 
 *The master map. Read first every session. Every folder, every file, one-line descriptions.*

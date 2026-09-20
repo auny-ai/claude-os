@@ -1,3 +1,15 @@
+---
+title: Session Start Protocol Template
+description: Fill-in-the-blank protocol template specifying the read order (Session_Log, HQ, task-specific protocol) that Claude follows at the start of every session, with guidance on customizing it per vault.
+category: template
+status: active
+tags:
+  - template
+  - session-management
+  - protocols
+  - routing
+---
+
 # 01 — Session Start Protocol
 ### What Claude reads + checks at the start of every session
 *Triggers: automatic at start of every chat / "session start" / "load context"*

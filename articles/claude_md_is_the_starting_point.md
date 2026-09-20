@@ -1,3 +1,17 @@
+---
+title: CLAUDE.md is the Starting Point
+description: Explains the five-layer context system (CLAUDE.md, vault, MCP, protocols, routing) that extends a basic CLAUDE.md file into a full persistent-memory system for Claude, with templates for each layer and a four-week rollout plan.
+category: article
+status: active
+tags:
+  - claude-md
+  - vault
+  - mcp
+  - protocols
+  - routing
+  - context-engineering
+---
+
 # CLAUDE.md is the Starting Point
 
 A markdown file at the root of your project tells Claude how to behave inside that project. It is useful. It is also the starting point — not the whole system.

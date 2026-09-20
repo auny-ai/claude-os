@@ -1,3 +1,16 @@
+---
+title: Connecting Grok to Claude via MCP
+description: Step-by-step setup guide for installing the Grok MCP server in Claude Desktop with an xAI API key, covering the install script, the connection test, and the session-protocol addition that routes live X search and DeepSearch into content research.
+category: integration
+status: active
+tags:
+  - grok
+  - mcp
+  - x-search
+  - integration-guide
+  - content-research
+---
+
 # Connecting Grok to Claude via MCP
 ### How to give Claude live X search and Grok's DeepSearch — 
 ### and why it changes content sessions completely

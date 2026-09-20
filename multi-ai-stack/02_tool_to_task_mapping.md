@@ -1,3 +1,16 @@
+---
+title: Tool-to-Task Mapping
+description: Master routing table mapping every task type (writing, research, visual, music, code, automation) to its primary tool with fallbacks, plus the four core rules (design, research, automation, memory) that keep tool selection consistent instead of guessed.
+category: reference
+status: active
+tags:
+  - multi-ai
+  - routing
+  - mcp
+  - automation
+  - claude
+---
+
 # Tool-to-Task Mapping
 ### The right tool for every job — no guessing, no overlap
 

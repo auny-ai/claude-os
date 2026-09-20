@@ -1,3 +1,16 @@
+---
+title: Obsidian Vault Structure
+description: Explains how to structure an Obsidian vault as an AI memory layer, shows an example emoji-prefixed folder tree, lists which files Claude reads per session domain, and gives a six-step guide to building the vault and connecting it to Claude over MCP.
+category: architecture
+status: active
+tags:
+  - obsidian-vault
+  - vault-structure
+  - mcp
+  - knowledge-management
+  - routing
+---
+
 # Obsidian Vault Structure
 ### How to build a second brain that every AI tool reads from automatically
 

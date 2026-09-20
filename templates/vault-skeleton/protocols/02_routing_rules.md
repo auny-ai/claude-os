@@ -1,3 +1,15 @@
+---
+title: Routing Rules Template
+description: Fill-in-the-blank routing table template for vault operations, web research, code execution, and image generation, specifying primary and fallback tools so Claude's tool choice is not guessed.
+category: template
+status: active
+tags:
+  - template
+  - routing
+  - protocols
+  - tool-selection
+---
+
 # 02 — Routing Rules
 ### Which tool Claude calls for which job
 *Triggers: automatic — Claude reads this whenever tool selection is ambiguous*

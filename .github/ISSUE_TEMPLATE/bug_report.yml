@@ -1,0 +1,28 @@
+name: Bug report
+description: A doc is wrong, outdated, or contradicts another doc. Say which file and which line.
+labels: [bug]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File
+      description: The path to the doc.
+      placeholder: session-protocol/01_session_start_protocol.md
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it says, and what's wrong with it
+      description: Quote the section. If it contradicts another file, name that file too.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before filing
+      options:
+        - label: I searched open and closed issues.
+          required: true
+        - label: This report contains no email address, API key, or other credential.
+          required: true

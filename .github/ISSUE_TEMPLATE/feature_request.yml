@@ -1,0 +1,27 @@
+name: Feature request
+description: A workflow, protocol, or integration guide you'd want documented here.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: gap
+    attributes:
+      label: What's missing
+      description: What did you need this repo to explain that it doesn't?
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of addition
+      options:
+        - A new workflow or protocol
+        - A new MCP integration guide
+        - A persona or template
+        - Documentation fix or clarification
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What the new doc or section would say.

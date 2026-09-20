@@ -225,3 +225,35 @@ If this is useful, hit ⭐ — it helps others find it.
 ---
 
 *Built in public. Documented as it runs. 🕷️*
+
+---
+
+## license
+
+[MIT](./LICENSE). use it, fork it, build on it.
+
+### what this means
+
+You are free to:
+- ✅ Use this system for personal, commercial, or any purpose
+- ✅ Modify and adapt it for your own workflows
+- ✅ Share your modifications and improvements
+- ✅ Distribute copies of the software
+
+You must:
+- ℹ️ Include a copy of this license and copyright notice
+
+You cannot:
+- ❌ Hold the author liable for any issues that arise from use
+- ❌ Claim the author endorses your use
+
+---
+
+### attribution
+
+If you use this system or build upon it, attribution is appreciated but not required:
+
+*Built with claude-os by @AunySillyMe (https://github.com/auny-ai/claude-os)*
+
+---
+
